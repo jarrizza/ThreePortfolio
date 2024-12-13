@@ -13,5 +13,8 @@ Three.js, React portfolio web app sample
 
 
 # Reference
-    Udemy Create a Three.js Portfolio with React Three Fiber
+    Udemy Create a Three.js Portfolio with React Three Fiber - Erik Truckner
+    https://www.udemy.com/course/react-three-portfolio/learn/lecture/37409766#overview
+    
+
 
