@@ -1,9 +1,19 @@
 import '../index.css'
+import { Canvas} from '@react-three/fiber'
+
 const MainContainer = () => {
+  const bgColor = ({ gl }) => {
+    gl.setClearColor('#000000', 1);
+  }
+  
   return (
-    <div className='absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
-      <h1 className='text-5xl'>Welcome to the Course!</h1>
-    </div>
+    <Canvas
+      id='canvas'
+      style={{position: 'fixed'}}
+      camera={{ position: [20, 3, 5], fov: 25}}
+      onCreated={bgColor}>  
+
+    </Canvas>
   )
 }
 
