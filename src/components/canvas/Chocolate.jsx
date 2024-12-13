@@ -3,7 +3,7 @@ import { useMemo } from 'react';
 import { useGLTF } from '@react-three/drei';
 
 export default function Chocolate({name, scale}) {
-     const model = useMemo(() => useGLTF(`./chocolate${name}/scene.gltf`), []);
+  const model = useMemo(() => useGLTF(`./chocolate${name}/scene.gltf`), []);
   return (
     <mesh>
         <primitive 

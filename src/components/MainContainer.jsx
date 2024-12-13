@@ -2,10 +2,7 @@ import React from 'react';
 import '../index.css'
 import { Canvas} from '@react-three/fiber'
 
-
-import Chocolate from './canvas/Chocolate';
-
-import { OrbitControls } from '@react-three/drei';
+import ReactLogo from './canvas/ReactLogo';
 
 const MainContainer = () => {
   const bgColor = ({ gl }) => {
@@ -18,25 +15,17 @@ const MainContainer = () => {
       style={{position: 'fixed'}}
       camera={{ position: [20, 3, 8], fov: 25}}
       onCreated={bgColor}>  
-      <pointLight intensity={3} color={0xff0000} position={[0, 5, 5]} />
-      <spotLight intensity={4} color={0xff0000} position={(-20, 50, 10)} />
-      <OrbitControls />
-      <Chocolate name={'Swirl'} scale={0.08} />
+      <pointLight intensity={3} color={0xeeeeee} position={[0, 5, 5]} />
+      <spotLight intensity={4} color={0xeeeeee} position={(-20, 50, 10)} />
+      <ReactLogo />
     </Canvas>
   )
 }
 
 export default MainContainer
 
+
 /*
-
-      import Chocolate from './canvas/ChocolateSwirl';
-      <pointLight intensity={3} color={0xff0000} position={[0, 5, 5]} />
-      <spotLight intensity={4} color={0xff0000} position={(-20, 50, 10)} />
-      <Chocolate />
-
-      import ReactLogo from './canvas/ReactLogo'
-      <pointLight intensity={2} color={0x61dbfb} position={[0, 5, 5]} />
-      <spotLight intensity={1} color={0x61dbfb} position={(-20, 50, 10)} />
-      <ReactLogo />
+  <ReactLogo />
+      <Chocolate name={'Swirl'} scale={0.08} />
 */
